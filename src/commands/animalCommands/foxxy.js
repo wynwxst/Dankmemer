@@ -1,4 +1,4 @@
-const { GenericMediaCommand } = require('../../models/')
+const { GenericMediaCommand } = require('../../models/');
 
 module.exports = new GenericMediaCommand({
   triggers: ['foxxy', 'fox'],
@@ -8,4 +8,4 @@ module.exports = new GenericMediaCommand({
   message: 'Fox is love, fox is life',
   JSONKey: 'image',
   reqURL: 'https://randomfox.ca/floof/'
-})
+});

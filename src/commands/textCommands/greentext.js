@@ -1,4 +1,4 @@
-const { GenericCommand } = require('../../models/')
+const GenericCommand = require('../../models/GenericCommand');
 
 module.exports = new GenericCommand(
   async ({ Memer, cleanArgs }) => Memer.codeblock(cleanArgs.join(' '), 'css'), {
@@ -8,4 +8,4 @@ module.exports = new GenericCommand(
 
     missingArgs: 'Give me something to greentext and try again'
   }
-)
+);

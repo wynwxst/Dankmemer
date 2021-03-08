@@ -1,4 +1,4 @@
-const { GenericCommand } = require('../../models/')
+const GenericCommand = require('../../models/GenericCommand');
 
 module.exports = new GenericCommand(
   () => 'OwO',
@@ -7,4 +7,4 @@ module.exports = new GenericCommand(
     description: 'owo whats this',
     perms: []
   }
-)
+);

@@ -1,4 +1,4 @@
-const { GenericImageCommand } = require('../../models/')
+const { GenericImageCommand } = require('../../models/');
 
 module.exports = new GenericImageCommand({
   triggers: ['tweet', 'tweetastrump'],
@@ -8,4 +8,4 @@ module.exports = new GenericImageCommand({
   requiredArgs: 'You need to add something to make trump tweet, try again.',
   textLimit: 140,
   textOnly: true
-})
+});

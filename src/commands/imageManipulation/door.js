@@ -1,6 +1,6 @@
-const { GenericImageCommand } = require('../../models/')
+const { GenericImageCommand } = require('../../models/');
 
 module.exports = new GenericImageCommand({
   triggers: ['door', 'kickdoor'],
   description: 'lol rekt'
-})
+});

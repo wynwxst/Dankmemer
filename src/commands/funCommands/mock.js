@@ -1,9 +1,9 @@
-const { GenericCommand } = require('../../models/')
+const GenericCommand = require('../../models/GenericCommand');
 
 module.exports = new GenericCommand(
   async ({ Memer, args, msg }) => {
     if (msg.mentions[0]) {
-      return 'Give me text to mock, not specifically a person'
+      return 'Give me text to mock, not specifically a person';
     }
     return {
       content: args
@@ -14,7 +14,7 @@ module.exports = new GenericCommand(
         .map((c, i) => i % 2 ? c.toUpperCase() : c)
         .join(''),
       file: { file: Memer.mockIMG, name: 'mock.jpg' }
-    }
+    };
   }, {
     triggers: ['mock'],
     description: 'Mock the stupid shit your friend says!',
@@ -23,4 +23,4 @@ module.exports = new GenericCommand(
 
     missingArgs: 'You gotta give me something to mock :eyes:'
   }
-)
+);

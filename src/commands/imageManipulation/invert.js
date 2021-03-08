@@ -1,6 +1,6 @@
-const { GenericImageCommand } = require('../../models/')
+const { GenericImageCommand } = require('../../models/');
 
 module.exports = new GenericImageCommand({
   triggers: ['invert'],
   description: 'Your least favorite command is back!'
-})
+});

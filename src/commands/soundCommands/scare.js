@@ -1,4 +1,4 @@
-const { GenericVoiceCommand } = require('../../models/')
+const { GenericVoiceCommand } = require('../../models/');
 
 module.exports = new GenericVoiceCommand({
   triggers: ['scare', 'jumpscare'],
@@ -6,6 +6,6 @@ module.exports = new GenericVoiceCommand({
 
   existingConn: 'I only have one pet ghost, dude. Please wait until the current sound is done, you assbutt',
   dir: 'scares',
-  reaction: '👻',
-  ext: 'opus'
-})
+  ext: 'opus',
+  ownerOnly: true
+});

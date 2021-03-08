@@ -1,4 +1,4 @@
-const { GenericImageCommand } = require('../../models/')
+const { GenericImageCommand } = require('../../models/');
 
 module.exports = new GenericImageCommand({
   triggers: ['quote'],
@@ -7,4 +7,4 @@ module.exports = new GenericImageCommand({
 
   requiredArgs: 'Who is saying what? ',
   textLimit: 250
-})
+});

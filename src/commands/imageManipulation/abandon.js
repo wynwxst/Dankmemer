@@ -1,4 +1,4 @@
-const { GenericImageCommand } = require('../../models/')
+const { GenericImageCommand } = require('../../models/');
 
 module.exports = new GenericImageCommand({
   triggers: ['abandon', 'disown'],
@@ -8,4 +8,4 @@ module.exports = new GenericImageCommand({
   requiredArgs: 'You need to add something to make the baby say, try again.',
   textLimit: 60,
   textOnly: true
-})
+});

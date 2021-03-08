@@ -1,4 +1,4 @@
-const { GenericRedditCommand } = require('../../models')
+const { GenericRedditCommand } = require('../../models');
 
 module.exports = new GenericRedditCommand({
   triggers: ['4chan'],
@@ -6,4 +6,4 @@ module.exports = new GenericRedditCommand({
 
   endpoint: '/r/greentext/top/.json?sort=top&t=day&limit=400',
   type: 'image'
-})
+});

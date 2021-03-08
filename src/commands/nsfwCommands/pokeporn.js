@@ -1,4 +1,4 @@
-const { GenericMediaCommand } = require('../../models/')
+const { GenericMediaCommand } = require('../../models/');
 
 module.exports = new GenericMediaCommand({
   triggers: ['pokeporn', 'ewitspokemonhavingsex'],
@@ -8,6 +8,7 @@ module.exports = new GenericMediaCommand({
   title: 'PeekAtChu ;)',
   message: 'Free nudes thanks to boobbot & tom <3',
   JSONKey: 'url',
+  donorOnly: true,
   reqURL: 'https://boob.bot/api/v2/img/PokePorn',
-  tokenKey: 'porn'
-})
+  tokenKey: 'boobbot'
+});

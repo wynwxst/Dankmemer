@@ -1,4 +1,4 @@
-const { GenericImageCommand } = require('../../models/')
+const { GenericImageCommand } = require('../../models/');
 
 module.exports = new GenericImageCommand({
   triggers: ['savehumanity', 'humanity'],
@@ -8,4 +8,4 @@ module.exports = new GenericImageCommand({
   requiredArgs: 'You need to include something that will save humanity, try again',
   textLimit: 199,
   textOnly: true
-})
+});

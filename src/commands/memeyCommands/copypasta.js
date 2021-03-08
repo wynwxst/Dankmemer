@@ -1,4 +1,4 @@
-const { GenericRedditCommand } = require('../../models/')
+const { GenericRedditCommand } = require('../../models/');
 
 module.exports = new GenericRedditCommand({
   triggers: ['copypasta', 'shitpost'],
@@ -6,4 +6,4 @@ module.exports = new GenericRedditCommand({
 
   endpoint: '/r/copypasta/top/.json?sort=top&t=week&limit=500',
   type: 'text'
-})
+});

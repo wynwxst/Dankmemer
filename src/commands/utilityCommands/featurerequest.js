@@ -1,8 +1,8 @@
-const { GenericCommand } = require('../../models/')
+const GenericCommand = require('../../models/GenericCommand');
 
 module.exports = new GenericCommand(
   async ({ Memer, msg, args, addCD }) => {
-    const channel = Memer.config.featureRequestChannel || '430835458000420864'
+    const channel = Memer.config.options.featureRequestChannel || '430835458000420864';
 
     await Memer.bot.createMessage(channel, { embed: {
       title: 'New request:',
@@ -12,14 +12,14 @@ module.exports = new GenericCommand(
       color: Memer.randomColor(),
       footer: { text: `Guild ID: ${msg.channel.guild.id}` },
       timestamp: new Date()
-    }})
+    }});
 
-    await addCD()
+    await addCD();
 
-    return 'Your feature request has been sent to the developers. Feel free to suggest more after the cooldown.'
+    return 'Your feature request has been sent to the developers. Feel free to suggest more after the cooldown.';
   }, {
     triggers: ['featurerequest'],
     description: 'Use this command to request a feature you\'d like the bot to have.',
     missingArgs: 'Use this command to request a feature you\'d like the bot to have. Try again'
   }
-)
+);

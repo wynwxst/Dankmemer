@@ -1,4 +1,4 @@
-const { GenericRedditCommand } = require('../../models')
+const { GenericRedditCommand } = require('../../models');
 
 module.exports = new GenericRedditCommand({
   triggers: ['wholesome', 'wmeme', 'wholesomememe'],
@@ -6,4 +6,4 @@ module.exports = new GenericRedditCommand({
 
   endpoint: '/r/wholesomememes/top/.json?sort=top&t=weekly&limit=100',
   type: 'image'
-})
+});

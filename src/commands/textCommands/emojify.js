@@ -1,4 +1,4 @@
-const { GenericCommand } = require('../../models/')
+const GenericCommand = require('../../models/GenericCommand');
 const specialCodes = {
   '0': ':zero:',
   '1': ':one:',
@@ -15,14 +15,14 @@ const specialCodes = {
   '?': ':grey_question:',
   '!': ':grey_exclamation:',
   ' ': '   '
-}
+};
 
 module.exports = new GenericCommand(
   async ({ cleanArgs }) => {
-    let args = cleanArgs
+    let args = cleanArgs;
 
     if (args.join(' ').length > 90) {
-      return 'Keep it under 90 characters fam'
+      return 'Keep it under 90 characters fam';
     }
 
     return args
@@ -31,12 +31,12 @@ module.exports = new GenericCommand(
       .split('')
       .map(letter => {
         if (/[a-z]/g.test(letter)) {
-          return `:regional_indicator_${letter}: `
+          return `:regional_indicator_${letter}: `;
         } else if (specialCodes[letter]) {
-          return `${specialCodes[letter]} `
+          return `${specialCodes[letter]} `;
         }
-        return letter
-      }).join('')
+        return letter;
+      }).join('');
   }, {
     triggers: ['emojify'],
     description: 'Make the bot say whatever you want with emojis!',
@@ -44,4 +44,4 @@ module.exports = new GenericCommand(
 
     missingArgs: 'What do you want me to put into emojis?'
   }
-)
+);

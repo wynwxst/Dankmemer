@@ -1,4 +1,4 @@
-const { GenericRedditCommand } = require('../../models')
+const { GenericRedditCommand } = require('../../models');
 
 module.exports = new GenericRedditCommand({
   triggers: ['tifu', 'todayifuckedup'],
@@ -6,4 +6,4 @@ module.exports = new GenericRedditCommand({
 
   endpoint: '/r/tifu/top/.json?sort=top&t=day&limit=400',
   type: 'text'
-})
+});

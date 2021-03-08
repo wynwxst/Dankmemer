@@ -1,5 +1,5 @@
-const { roast } = require('../../assets/arrays/roasts.json')
-const { GenericCommand } = require('../../models/')
+const { roast } = require('../../assets/arrays/roasts.json');
+const GenericCommand = require('../../models/GenericCommand');
 
 module.exports = new GenericCommand(
   async ({ Memer, msg }) => Memer.randomInArray(roast)
@@ -10,4 +10,4 @@ module.exports = new GenericCommand(
     usage: '{command} @user',
     description: 'Sick of someone? Easy! Just roast them!'
   }
-)
+);

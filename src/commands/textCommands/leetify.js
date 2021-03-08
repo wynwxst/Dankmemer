@@ -1,5 +1,5 @@
-const { GenericCommand } = require('../../models/')
-const leet = require('../../utils/leetGenerator')
+const GenericCommand = require('../../models/GenericCommand');
+const leet = require('../../utils/leetGenerator');
 
 module.exports = new GenericCommand(
   async ({ cleanArgs }) => leet(cleanArgs.join(' ')).replace(/\\/g, '\\\\'),
@@ -10,4 +10,4 @@ module.exports = new GenericCommand(
 
     missingArgs: 'You can\'t be a leet H4x0r if you don\'t tell me what to say'
   }
-)
+);

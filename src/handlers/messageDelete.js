@@ -1,11 +1,9 @@
 exports.handle = async function (msg) {
-  if (!this.snipe) {
-    this.snipe = {}
+  const cachedEntry = await this.redis.get(`msg-${msg.id}`)
+    .then(res => res ? JSON.parse(res) : undefined);
+  if (!cachedEntry) {
+    return;
   }
-  if (!this.snipe[msg.channel.guild.id]) {
-    this.snipe[msg.channel.guild.id] = {}
-  }
-  if (msg.content) {
-    this.snipe[msg.channel.guild.id][msg.channel.id] = { userID: msg.author.id, content: msg.content, timestamp: msg.timestamp }
-  }
-}
+  this.ddog.increment('deletedMessages');
+  this.redis.set(`deletedmsg-${cachedEntry.guildID}-${cachedEntry.channelID}`, JSON.stringify({ userID: cachedEntry.userID, content: cachedEntry.content, timestamp: cachedEntry.timestamp }), 'EX', 60 * 60);
+};

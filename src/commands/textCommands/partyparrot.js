@@ -1,17 +1,17 @@
-const { GenericCommand } = require('../../models/')
+const GenericCommand = require('../../models/GenericCommand');
 
 module.exports = new GenericCommand(
   async ({ cleanArgs }) => {
-    let args = cleanArgs
+    let args = cleanArgs;
 
     if (args.join(' ').length > 55) {
-      return 'Keep it under 55 characters fam'
+      return 'Keep it under 55 characters fam';
     }
 
     if (args.length === 1) {
-      return args[0].split('').join(' <a:partyparrot:429416315695005696> ')
+      return args[0].split('').join(' <a:partyparrot:429416315695005696> ');
     } else {
-      return args.join(' <a:partyparrot:429416315695005696> ')
+      return args.join(' <a:partyparrot:429416315695005696> ');
     }
   }, {
     triggers: ['partyparrot', 'party'],
@@ -20,4 +20,4 @@ module.exports = new GenericCommand(
 
     missingArgs: 'What do you want me to say?'
   }
-)
+);

@@ -51,3 +51,5 @@ src/assets/audio/custom/
 
 # Yarn Lockfile
 yarn.lock
+
+secrets.json

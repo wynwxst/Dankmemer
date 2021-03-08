@@ -1,4 +1,4 @@
-const { GenericMediaCommand } = require('../../models/')
+const { GenericMediaCommand } = require('../../models/');
 
 module.exports = new GenericMediaCommand({
   triggers: ['birb', 'bird', 'chirpyboi'],
@@ -7,4 +7,4 @@ module.exports = new GenericMediaCommand({
   title: '🐦',
   reqURL: 'https://random.birb.pw/tweet/',
   prependURL: 'https://random.birb.pw/img/'
-})
+});

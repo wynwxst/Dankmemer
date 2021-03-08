@@ -1,4 +1,4 @@
-const { GenericRedditCommand } = require('../../models/')
+const { GenericRedditCommand } = require('../../models/');
 
 module.exports = new GenericRedditCommand({
   triggers: ['joke', 'funny'],
@@ -6,4 +6,4 @@ module.exports = new GenericRedditCommand({
 
   endpoint: '/r/Jokes/top/.json?sort=top&t=day&limit=400',
   type: 'text'
-})
+});

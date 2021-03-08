@@ -1,27 +1,27 @@
-const { GenericCommand } = require('../../models/')
+const GenericCommand = require('../../models/GenericCommand');
 
 module.exports = new GenericCommand(
   async ({ Memer, msg, args }) => {
-    let encoded
-    let [encode, ...string] = args
+    let encoded;
+    let [encode, ...string] = args;
     switch (encode) {
       case 'base64':
       case 'b64':
-        encoded = Buffer.from(string.join(' ')).toString('base64')
-        break
+        encoded = Buffer.from(string.join(' ')).toString('base64');
+        break;
       case 'url':
-        encoded = encodeURIComponent(string.join(' '))
-        break
+        encoded = encodeURIComponent(string.join(' '));
+        break;
       case 'hex':
-        let hello = Buffer.from(string.join(' ')).toString('base64')
-        let pre = Buffer.from(hello, 'base64')
-        encoded = pre.toString('hex')
-        break
+        let hello = Buffer.from(string.join(' ')).toString('base64');
+        let pre = Buffer.from(hello, 'base64');
+        encoded = pre.toString('hex');
+        break;
 
       default:
-        return 'Not a valid type of encoding, please use `base64`, `url`, or `hex`'
+        return 'Not a valid type of encoding, please use `base64`, `url`, or `hex`';
     }
-    return encoded
+    return encoded;
   }, {
     triggers: ['encode'],
     usage: '{command}',
@@ -29,4 +29,4 @@ module.exports = new GenericCommand(
     minArgs: 2,
     missingArgs: 'You need to choose the type of encoding, and text to encode. Please use `base64`, `url`, or `hex`'
   }
-)
+);

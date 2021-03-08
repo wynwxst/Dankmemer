@@ -1,17 +1,17 @@
-const { GenericCommand } = require('../../models/')
+const GenericCommand = require('../../models/GenericCommand');
 
 module.exports = new GenericCommand(
   async ({ cleanArgs }) => {
-    let args = cleanArgs
+    let args = cleanArgs;
 
     if (args.join(' ').length > 666) {
-      return 'Keep it under 666 characters fam'
+      return 'Keep it under 666 characters fam';
     }
 
     if (args.length === 1) {
-      return args[0].split('').join(' 👏 ')
+      return args[0].split('').join(' 👏 ');
     } else {
-      return args.join(' 👏 ')
+      return args.join(' 👏 ');
     }
   }, {
     triggers: ['clap', 'clapify'],
@@ -20,4 +20,4 @@ module.exports = new GenericCommand(
 
     missingArgs: 'What do you want me to say?'
   }
-)
+);
