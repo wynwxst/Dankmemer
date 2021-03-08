@@ -1,0 +1,31 @@
+{
+  "dev": true,
+  "premium": false,
+  "token": "4",
+  "shardCount": 1,
+  "help": {
+    "title": string,
+    "message": string,
+    "footer": string
+  },
+  "defaultPrefix": string,
+  "devs": [string],
+  "imgenKey": "",
+  "gif": "",
+  "porn": "",
+  "weeb": "",
+  "mashape": "",
+  "webhooks": {
+    "shard": {
+      "id": string,
+      "token": string
+    },
+    "cluster": {
+      "id": string,
+      "token": string
+    }
+  },
+  "featureRequestChannel": optional string,
+  "spamReportChannel": optional string,
+  "errorChannel": optional string
+}
