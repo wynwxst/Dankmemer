@@ -7,7 +7,7 @@ please go to the <a href="https://github.com/Eris9/Dankmemer/wiki">wiki</a> for 
 You can try building locally or on https://repl.it
 
 ### Neodank?
-Neodank is a modern version of dank memer still being developed
+Neodank is a modern version of dank memer still being developed (to be uploaded)
 
 ### pydank?
 A python version of dank memer as a cog
