@@ -1,0 +1,43 @@
+{
+  "name": "dank-memer",
+  "version": "5.0.0",
+  "description": "A discord entertainment based bot, with an emphasis on memes.",
+  "main": "memer.js",
+  "scripts": {
+    "linter": "semistandard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dank-memer/Dank-Memer.git"
+  },
+  "keywords": [
+    "discord",
+    "meme",
+    "bot",
+    "melmsie"
+  ],
+  "author": "melmsie",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dank-memer/Dank-Memer/issues"
+  },
+  "homepage": "https://github.com/dank-memer/Dank-Memer#readme",
+  "dependencies": {
+    "asciiart-logo": "^0.1.7",
+    "cheerio": "^1.0.0-rc.2",
+    "eris-sharder": "github:Discord-Sharders/eris-sharder#dev",
+    "eslint-config-semistandard": "^12.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "ioredis": "^4.0.0",
+    "lavalink": "^2.2.3",
+    "node-dogstatsd": "0.0.7",
+    "programmatic-repl": "^1.1.4",
+    "rethinkdbdash": "^2.3.31",
+    "semistandard": "^12.0.1",
+    "standard": "^11.0.1",
+    "tubesearch": "^1.0.5"
+  }
+}
