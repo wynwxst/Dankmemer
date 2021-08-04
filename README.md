@@ -6,6 +6,10 @@ please go to the <a href="https://github.com/Eris9/Dankmemer/wiki">wiki</a> for 
 ### Just a note
 You can try building locally or on https://repl.it
 
+### Config
+
+config.json and secrets.json are now located in src/
+
 ### Neodank
 Neodank is a modern version of dank memer still being developed (to be uploaded)
 
