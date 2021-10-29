@@ -18,3 +18,6 @@ A python version of dank memer as a cog
 
 ### Extending base:
 <a href= "https://github.com/Apollyon9/Dankmemer/wiki/Extend-Base"> Extending base </a>
+
+### Issues:
+Raise an issue in the issues panel.
