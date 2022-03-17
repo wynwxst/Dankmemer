@@ -1,5 +1,5 @@
 # Dankmemer
- Dank memer source code with build docs
+ Dank memer source code with build docs (updated)
 
 please go to the <a href="https://github.com/Eris9/Dankmemer/wiki">wiki</a> for build docs
 
