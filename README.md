@@ -4,7 +4,7 @@
 please go to the <a href="https://github.com/Eris9/Dankmemer/wiki">wiki</a> for build docs
 
 ### Just a note
-You can try building locally or on https://repl.it
+You can try building locally or on https://replit.com
 
 ### Config
 
